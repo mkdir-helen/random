@@ -1,0 +1,170 @@
+/* @keyframes zoom{
+    from{
+        transform: scale(1)    ;
+        -webkit-transform: scale(1)    ;
+        -moz-transform: scale(1)    ;
+        -ms-transform: scale(1)    ;
+        -o-transform: scale(1)    ;
+}
+    to {
+        transform: scale(1.7)    ;
+        -webkit-transform: scale(1.7)    ;
+        -moz-transform: scale(1.7)    ;
+        -ms-transform: scale(1.7)    ;
+        -o-transform: scale(1.7)    ;
+    }
+} */
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.header-text{
+    padding: 0 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo-text {
+    color:rgba(123, 13, 2, 0.9);
+    font-size: 1.5rem; 
+    font-size: 18px;
+    display: inline-block;
+    outline: 1px solid red;
+    margin-right: 30px;
+}
+
+.nav-link {
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.nav-container {
+    display: inline-block;
+    outline: 1px solid blue;
+}
+
+.hero-image {
+    background-image: url(../images/adventure-calm-clouds-414171.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    min-height: 300px;
+    min-width: 100%;
+
+}
+
+.hero-image h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me {
+    width: 100%;
+    outline: 1px solid red;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+/* direct child selector */
+.about-me > div {
+    outline: 1px solid red;
+}
+
+.about-me h3 {
+    font-size: 2rem;
+    outline: 1px solid blue;
+    padding-top: 10px;
+}
+
+
+.profile-image {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.contact-links{
+    background-color: rgba(0,0,0,0.7);
+    padding: 8px 12px;
+    display: flex;
+    justify-content: flex-end;
+    outline: 1px solid red;
+    position:relative;
+}
+
+.contact-links i{
+    color: white;
+    font-size: 36px;
+    margin: 0 8px;
+    transition: font-size .25s;
+    -webkit-transition: font-size .25s;
+    -moz-transition: font-size .25s;
+    -ms-transition: font-size .25s;
+    -o-transition: font-size .25s;
+}
+
+.contact-links i:hover {
+    outline: 1px solid white;
+    color: rgb(1, 31, 255);
+    background-color: white;
+    cursor: pointer;
+    font-size: 48px;
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+}
+
+
+@media screen and (min-width: 500px){
+    .profile-image{
+        width: 200px;
+    }
+    .about-me {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about-me-container {
+        width: 70%;
+        padding: 5px; 
+    }
+
+}
+
+@media screen and (min-width: 700px){
+    .hero-image h2 {
+        font-size: 48px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-text > * {
+        outline: 1px solid red;
+    }
+}

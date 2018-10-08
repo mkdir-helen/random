@@ -9,3 +9,8 @@ We'll use it to learn CSS techniques.
 - Hero image
 - About Me
 - Projects
+
+## Techniques
+- Chrome Dev Tools
+- Linking CSS files
+    - normalize.css (of 'CSS Reset' file)
